@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { AppBar, Tab, Tabs, Toolbar, Typography } from '@mui/material';
 import CartWidget from './CartWidget ';
 
@@ -11,10 +12,10 @@ const Navbar = () => {
             <h2>SOUR Company</h2>
         </Typography>
         <Tabs sx={{marginLeft: 'auto'}} textColor="inherit">
-        <Tab label="Inicio" />
-        <Tab label="Productos" />
-        <Tab label="Contacto" />
-        <Tab label="Sobre Nosotros" />
+        <Link to= "/">Inicio</Link>
+        <Link to= "/">Productos</Link>
+        <Link to= "/">Contacto</Link>
+        <Link to= "/">Sobre Nosotros</Link>
         </Tabs>
         <button>
         <CartWidget/>
